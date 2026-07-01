@@ -38,25 +38,12 @@ if (process.env.NODE_ENV === 'production') {
   });
 } else {
   app.get('/', (req, res) => {
-    res.send('ShopNest API is running in Development mode...');
+    res.send('Cartify API is running in Development mode...');
   });
 }
 
 
-app.get("/test-email", async (req, res) => {
-  try {
-    await sendEmail(
-      "wbdv06@gmail.com", // Replace with your email
-      "Cartify Test Email",
-      "Hello! Your email configuration is working."
-    );
 
-    res.send("Email sent successfully!");
-  } catch (err) {
-    console.error(err);
-    res.status(500).send("Failed to send email");
-  }
-});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
