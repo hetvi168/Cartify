@@ -256,21 +256,6 @@ Available APIs
 
 ---
 
-# 📸 Screenshots
-
-> Add screenshots here.
-
-```
-screenshots/
-├── home.png
-├── login.png
-├── cart.png
-├── checkout.png
-└── admin-dashboard.png
-```
-
----
-
 # 🤝 Contributing
 
 1. Fork the repository
